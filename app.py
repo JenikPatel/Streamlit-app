@@ -22,3 +22,9 @@ map_data_2 = pd.DataFrame(
     columns = ['lat', 'lon']
 )
 st.map(map_data_2)
+
+if "counter" not in st.session_state:
+    st.session_state.counter = 0
+counter += 1
+st.header(f"You have run this page for {st.session_state.counter}")
+st.button("Run again")
