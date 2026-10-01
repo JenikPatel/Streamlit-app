@@ -28,3 +28,10 @@ if "counter" not in st.session_state:
 st.session_state.counter += 1
 st.header(f"You have run this page for {st.session_state.counter}")
 st.button("Run again")
+
+st.header("st.button")
+if st.button("Say Hello"):
+    st.write("Hello")
+    st.write("Why Hello there!!")
+else:
+    st.write("Goodbye")
